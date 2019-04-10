@@ -345,3 +345,10 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 35ms (Views: 33.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-04-10 15:06:48 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 695ms (Views: 684.9ms | ActiveRecord: 0.0ms)
+
+
