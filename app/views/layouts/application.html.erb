@@ -3,20 +3,16 @@
   <head>
     <title><%= yield(:title) %> | Ruby on Rails Tutorial Sample App</title>
     <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all',
+                                              'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= render 'layouts/shim' %>
   </head>
-
   <body>
-    <nav class="main-nav">
-      <%= link_to 'Home', root_path() %>
-      <%= link_to 'Help', static_pages_help_path() %>
-      <%= link_to 'About', static_pages_about_path() %>
-      <%= link_to 'Contact', static_pages_contact_path() %>
-    </nav>
-
-    <%= yield %>
+    <%= render 'layouts/header' %>
+    <div class="container">
+      <%= yield %>
+      <%= render 'layouts/footer' %>
+    </div>
   </body>
 </html>
