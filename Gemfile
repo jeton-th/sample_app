@@ -34,8 +34,10 @@ gem 'rubocop-performance'
 # gem 'redis', '~> 4.0'
 
 gem 'faker'
-gem 'will_paginate'
 gem 'bootstrap-will_paginate'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'will_paginate'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -49,6 +51,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :production do
   # Use Postgresql as the database in production
   gem 'pg'
+  gem 'fog'
 end
 
 group :development, :test do
