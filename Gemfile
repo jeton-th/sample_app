@@ -51,7 +51,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :production do
   # Use Postgresql as the database in production
   gem 'pg'
-  gem 'fog'
+  gem 'fog-local'
 end
 
 group :development, :test do
